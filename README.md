@@ -243,7 +243,7 @@ docker run -p 8000:8000 relu-backend
 
 ## Note
 
-This Assistant cannot scrap every websites because of the security policies differ company to company
+This assistant cannot scrape every website. Some companies implement security measures, bot protection, or access restrictions that may prevent content from being crawled and analyzed.
 
 ### Use Case Relevation
 
