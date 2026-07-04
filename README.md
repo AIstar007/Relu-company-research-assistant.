@@ -241,6 +241,22 @@ docker run -p 8000:8000 relu-backend
 
 ---
 
+## Note
+
+This Assistant cannot scrap every websites because of the security policies differ company to company
+
+### Use Case Relevation
+
+Amazon is one of the most aggressively bot-protected sites on the internet (Akamai/PerimeterX-style bot detection, JS-rendered content, region-redirects, sometimes CAPTCHA challenges). Your crawler uses plain httpx (no headless browser), so when it hits Amazon, one of these happens:
+
+Amazon detects it's not a real browser and returns a bot-check/redirect page instead of the real homepage
+The real content is loaded via JavaScript after page load, which httpx never executes — it only sees the raw initial HTML, which is often empty or boilerplate
+After stripping nav/footer/script (as your extract_clean_text does), there's nothing meaningful left → crawl_site returns an empty dict → your explicit check if not crawled_pages: raise HTTPException(...) fires
+
+This is actually the correct, honest behavior for a scraping-based tool — meta and telegram work because their marketing pages are simpler/less protected.
+
+---
+
 <div align="center">
 
 Built with ❤️ for AI-powered research automation
