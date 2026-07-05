@@ -30,11 +30,13 @@
 
 <div align="center">
 
-### Home — ChatGPT-style research interface
-<img src="screenshots/01-home.png" width="800" />
+### Main Interface
+<img src="screenshots/Screenshot 1.png" alt="Main interface" width="800" />
 
-### Full research result — company info, AI pain points, ranked competitors
-<img src="screenshots/02-research-result.png" width="800" />
+### Research result view
+<img src="screenshots/Screenshot 2.png" alt="Research result" width="800" />
+<img src="screenshots/Screenshot 3.png" alt="Research result" width="800" />
+<img src="screenshots/Screenshot 4.png" alt="Research result" width="800" />
 
 </div>
 
@@ -43,13 +45,13 @@
 <td width="50%">
 
 **📄 Generated PDF Report**
-<img src="screenshots/03-pdf-report.png" width="100%" />
+<img src="screenshots/Screenshot-10.png" alt="Generated PDF Report" width="800" />
 
 </td>
 <td width="50%">
 
 **💬 Discord Auto-Delivery**
-<img src="screenshots/04-discord-delivery.png" width="100%" />
+<img src="screenshots/Screenshot 9.png" alt="Discord Delivery" width="800" />
 
 </td>
 </tr>
@@ -296,6 +298,8 @@ When that happens, the crawler correctly detects it found no usable content and 
 {"detail": "No readable content found at https://www.amazon.com."}
 ```
 rather than silently failing or fabricating data. Companies with simpler, less-protected marketing sites (Meta, Telegram, Stripe, etc. — see screenshots above) work reliably.
+
+<img src="screenshots/Screenshot-18.png" alt="Discord Delivery" width="800" />
 
 ---
 
