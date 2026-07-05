@@ -18,11 +18,44 @@
 
 <br/>
 
+**🌐 Live app:** [relu-frontend-gamma.vercel.app](https://relu-frontend-gamma.vercel.app)
+
 [🚀 Quick Start](#-quick-start) · [🏗️ Architecture](#️-architecture) · [🔄 Request Flow](#-request-flow) · [⚙️ Configuration](#️-configuration) · [🚢 Deployment](#-deployment) · [🎨 Design Choices](#-design-choices)
 
 ---
 
 </div>
+
+## 📸 Live Demo
+
+<div align="center">
+
+### Home — ChatGPT-style research interface
+<img src="screenshots/01-home.png" width="800" />
+
+### Full research result — company info, AI pain points, ranked competitors
+<img src="screenshots/02-research-result.png" width="800" />
+
+</div>
+
+<table>
+<tr>
+<td width="50%">
+
+**📄 Generated PDF Report**
+<img src="screenshots/03-pdf-report.png" width="100%" />
+
+</td>
+<td width="50%">
+
+**💬 Discord Auto-Delivery**
+<img src="screenshots/04-discord-delivery.png" width="100%" />
+
+</td>
+</tr>
+</table>
+
+---
 
 ## ✨ What It Does
 
@@ -62,11 +95,13 @@ relu-research-assistant/
 │       ├── research.py             POST /api/research — full orchestration pipeline
 │       └── discord.py              POST /api/discord/test — validate bot token/channel
 │
-└── 📁 frontend/                    Next.js 14 (App Router) + Tailwind
-    ├── app/page.tsx                 Chat interface, examples, progress states
-    ├── components/Sidebar.tsx       API keys + Discord config tabs
-    ├── components/ResearchCard.tsx  Rendered research result + PDF download
-    └── lib/api.ts                   Backend client
+├── 📁 frontend/                    Next.js 14 (App Router) + Tailwind
+│   ├── app/page.tsx                 Chat interface, examples, progress states
+│   ├── components/Sidebar.tsx       API keys + Discord config tabs
+│   ├── components/ResearchCard.tsx  Rendered research result + PDF download
+│   └── lib/api.ts                   Backend client
+│
+└── 📁 screenshots/                 Demo images used in this README
 ```
 
 ---
@@ -142,10 +177,12 @@ uvicorn main:app --reload --port 8000
 > brew install pango gdk-pixbuf libffi
 >
 > # Ubuntu / Debian
-> apt-get install libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev libcairo2
+> apt-get install libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf-2.0-0 libffi-dev libcairo2
 > ```
 >
 > 🐳 Using Docker? The included `Dockerfile` handles all of this automatically.
+>
+> ⚠️ **Note:** `requirements.txt` pins `pydyf==0.10.0` alongside `weasyprint==62.3`. Newer `pydyf` releases (0.11+) removed an internal method WeasyPrint 62.3 depends on, which breaks PDF generation with an `AttributeError`. Keep this pin unless you also upgrade WeasyPrint.
 
 ### Frontend
 
@@ -186,14 +223,20 @@ Entered by the user per session, never persisted to disk or database:
 
 ## 🚢 Deployment
 
+**Live deployment:**
+- Frontend: [relu-frontend-gamma.vercel.app](https://relu-frontend-gamma.vercel.app) (Vercel)
+- Backend: Render (Docker)
+
 ### Frontend → Vercel
 
 ```bash
 # Set environment variable in Vercel dashboard:
-NEXT_PUBLIC_API_URL=https://your-backend.railway.app
+NEXT_PUBLIC_API_URL=https://your-backend.onrender.com
 ```
 
-### Backend → Railway / Render / Fly.io
+Set **Root Directory** to `frontend` when importing the project, since this is a monorepo.
+
+### Backend → Render / Railway / Fly.io
 
 ```bash
 # Build and run with Docker (recommended)
@@ -202,6 +245,8 @@ docker run -p 8000:8000 relu-backend
 ```
 
 > ⚠️ **Avoid pure serverless functions** — crawling + multiple sequential AI calls can exceed short function timeouts. Use a persistent container service.
+>
+> ⚠️ **Free-tier cold starts:** Render's free tier spins down after ~15 minutes idle. The first request after inactivity may take 30–50s while the container wakes up.
 
 ---
 
@@ -223,6 +268,7 @@ docker run -p 8000:8000 relu-backend
 |---|---|---|
 | `POST` | `/api/research` | Full orchestration pipeline — crawl → analyze → PDF |
 | `POST` | `/api/discord/test` | Validate Discord bot token and channel ID |
+| `GET` | `/api/health` | Health check |
 
 ---
 
@@ -241,19 +287,15 @@ docker run -p 8000:8000 relu-backend
 
 ---
 
-## Note
+## ⚠️ Known Limitation: Bot-Protected Sites
 
-This assistant cannot scrape every website. Some companies implement security measures, bot protection, or access restrictions that may prevent content from being crawled and analyzed.
+This assistant crawls with a plain HTTP client (`httpx`), not a headless browser — a deliberate tradeoff for speed and low resource use (see [Design Choices](#-design-choices)). Sites with aggressive bot protection (Akamai/PerimeterX-style detection, JS-rendered content, CAPTCHA challenges) — **Amazon being a prime example** — may return a bot-check page or empty content instead of the real homepage.
 
-### Use Case Relevation
-
-Amazon is one of the most aggressively bot-protected sites on the internet (Akamai/PerimeterX-style bot detection, JS-rendered content, region-redirects, sometimes CAPTCHA challenges). Your crawler uses plain httpx (no headless browser), so when it hits Amazon, one of these happens:
-
-Amazon detects it's not a real browser and returns a bot-check/redirect page instead of the real homepage
-The real content is loaded via JavaScript after page load, which httpx never executes — it only sees the raw initial HTML, which is often empty or boilerplate
-After stripping nav/footer/script (as your extract_clean_text does), there's nothing meaningful left → crawl_site returns an empty dict → your explicit check if not crawled_pages: raise HTTPException(...) fires
-
-This is actually the correct, honest behavior for a scraping-based tool — meta and telegram work because their marketing pages are simpler/less protected.
+When that happens, the crawler correctly detects it found no usable content and returns a clean error:
+```json
+{"detail": "No readable content found at https://www.amazon.com."}
+```
+rather than silently failing or fabricating data. Companies with simpler, less-protected marketing sites (Meta, Telegram, Stripe, etc. — see screenshots above) work reliably.
 
 ---
 
@@ -261,6 +303,6 @@ This is actually the correct, honest behavior for a scraping-based tool — meta
 
 Built with ❤️ for AI-powered research automation
 
-[⭐ Star this repo](#) · [🐛 Report an Issue](#) · [💡 Request a Feature](#)
+[⭐ Star this repo](https://github.com/AIstar007/Relu-company-research-assistant.) · [🐛 Report an Issue](https://github.com/AIstar007/Relu-company-research-assistant./issues)
 
 </div>
