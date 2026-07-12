@@ -14,9 +14,7 @@
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2500&pause=800&color=4FC3F7&center=true&vCenter=true&width=900&lines=Drop+a+company+name+%E2%86%92+Get+a+full+AI+research+report;Crawl+%E2%80%A2+Enrich+%E2%80%A2+Analyze+%E2%80%A2+Export+%E2%80%A2+Deliver;Any+LLM+%C2%B7+Zero+Persistence+%C2%B7+Fully+Stateless;FastAPI+%2B+Next.js+14+%2B+ChromaDB+%2B+Discord)](https://git.io/typing-svg)
 
-<br/>
 
 > **Drop in a company name or URL. Get a full AI research report — in seconds.**  
 > Crawls the web · Enriches with search · Analyzes with AI · Exports to PDF · Delivers via Discord.
@@ -122,6 +120,27 @@ relu-research-assistant/
 ---
 
 ## 🔄 Request Flow
+
+```mermaid
+graph TD
+    A[🌐 User Input - Company Name or URL] --> B[🔍 Resolve Official Website]
+    B --> C[🕷️ Crawl Internal Pages]
+    C --> D[🔎 Enrich with Search]
+    D --> E[🤖 AI Analysis - OpenRouter LLM]
+    E --> F[🏆 Competitor Ranking - Second LLM Call]
+    F --> G[📄 PDF Generation - WeasyPrint]
+    G --> H{Discord Configured?}
+    H -->|Yes| I[💬 Discord Auto-Delivery]
+    H -->|No| J[📥 PDF Download Only]
+
+    style A fill:#e1f5fe
+    style E fill:#f3e5f5
+    style G fill:#e8f5e9
+    style I fill:#5865F2,color:#fff
+    style J fill:#e8f5e9
+```
+
+### Step-by-Step Breakdown
 
 ```
 User Input (company name or URL)
