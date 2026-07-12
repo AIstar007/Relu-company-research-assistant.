@@ -1,15 +1,22 @@
 <div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:009688,50:6C47FF,100:5865F2&height=220&section=header&text=Company%20Research%20Assistant&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI-Powered%20%C2%B7%20Web-Crawling%20%C2%B7%20PDF%20Reports%20%C2%B7%20Discord%20Delivery&descAlignY=58"/>
+
 # 🔍 Relu Company Research Assistant
 
-### AI-Powered · Web-Crawling · PDF Reports · Discord Delivery
+<p>
+<a href="https://fastapi.tiangolo.com/"><img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white"/></a>
+<a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js_14-Frontend-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/></a>
+<a href="https://openrouter.ai/"><img src="https://img.shields.io/badge/OpenRouter-Any_LLM-6C47FF?style=for-the-badge&logo=openai&logoColor=white"/></a>
+<a href="https://serper.dev/"><img src="https://img.shields.io/badge/Serper.dev-Web_Search-FF6B35?style=for-the-badge&logo=google&logoColor=white"/></a>
+<a href="https://weasyprint.org/"><img src="https://img.shields.io/badge/WeasyPrint-PDF_Reports-E74C3C?style=for-the-badge&logo=adobeacrobatreader&logoColor=white"/></a>
+<a href="https://discord.com/"><img src="https://img.shields.io/badge/Discord-Auto_Delivery-5865F2?style=for-the-badge&logo=discord&logoColor=white"/></a>
+<img src="https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge"/>
+</p>
 
-[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Next.js](https://img.shields.io/badge/Next.js_14-Frontend-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-[![OpenRouter](https://img.shields.io/badge/OpenRouter-Any_LLM-6C47FF?style=for-the-badge&logo=openai&logoColor=white)](https://openrouter.ai/)
-[![Serper](https://img.shields.io/badge/Serper.dev-Web_Search-FF6B35?style=for-the-badge&logo=google&logoColor=white)](https://serper.dev/)
-[![WeasyPrint](https://img.shields.io/badge/WeasyPrint-PDF_Reports-E74C3C?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://weasyprint.org/)
-[![Discord](https://img.shields.io/badge/Discord-Auto_Delivery-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/)
+<br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2500&pause=800&color=4FC3F7&center=true&vCenter=true&width=900&lines=Drop+a+company+name+%E2%86%92+Get+a+full+AI+research+report;Crawl+%E2%80%A2+Enrich+%E2%80%A2+Analyze+%E2%80%A2+Export+%E2%80%A2+Deliver;Any+LLM+%C2%B7+Zero+Persistence+%C2%B7+Fully+Stateless;FastAPI+%2B+Next.js+14+%2B+ChromaDB+%2B+Discord)](https://git.io/typing-svg)
 
 <br/>
 
@@ -18,40 +25,48 @@
 
 <br/>
 
-**🌐 Live app:** [relu-frontend-gamma.vercel.app](https://relu-frontend-gamma.vercel.app)
+🌐 **Live App:** [relu-frontend-gamma.vercel.app](https://relu-frontend-gamma.vercel.app)
+
+<br/>
+
+[![View Live App](https://img.shields.io/badge/🌐_Open-Live_App-009688?style=for-the-badge)](https://relu-frontend-gamma.vercel.app)
+[![View Repository](https://img.shields.io/badge/⭐_Star-Repository-black?style=for-the-badge&logo=github)](https://github.com/AIstar007/Relu-company-research-assistant.)
+[![Report Issue](https://img.shields.io/badge/🐛_Report-Issue-FF6B35?style=for-the-badge&logo=github)](https://github.com/AIstar007/Relu-company-research-assistant./issues)
 
 [🚀 Quick Start](#-quick-start) · [🏗️ Architecture](#️-architecture) · [🔄 Request Flow](#-request-flow) · [⚙️ Configuration](#️-configuration) · [🚢 Deployment](#-deployment) · [🎨 Design Choices](#-design-choices)
 
----
-
 </div>
+
+---
 
 ## 📸 Live Demo
 
 <div align="center">
 
-### Main Interface
-<img src="screenshots/Screenshot 1.png" alt="Main interface" width="800" />
+### 💬 Main Interface
+<img src="screenshots/Screenshot 1.png" alt="Main interface" width="800"/>
 
-### Research result view
-<img src="screenshots/Screenshot 2.png" alt="Research result" width="800" />
-<img src="screenshots/Screenshot 3.png" alt="Research result" width="800" />
-<img src="screenshots/Screenshot 4.png" alt="Research result" width="800" />
+### 📊 Research Result View
+<img src="screenshots/Screenshot 2.png" alt="Research result" width="800"/>
+<img src="screenshots/Screenshot 3.png" alt="Research result" width="800"/>
+<img src="screenshots/Screenshot 4.png" alt="Research result" width="800"/>
 
 </div>
 
 <table>
 <tr>
-<td width="50%">
+<td width="50%" align="center">
 
 **📄 Generated PDF Report**
-<img src="screenshots/Screenshot-10.png" alt="Generated PDF Report" width="800" />
+
+<img src="screenshots/Screenshot-10.png" alt="Generated PDF Report" width="100%"/>
 
 </td>
-<td width="50%">
+<td width="50%" align="center">
 
 **💬 Discord Auto-Delivery**
-<img src="screenshots/Screenshot 9.png" alt="Discord Delivery" width="800" />
+
+<img src="screenshots/Screenshot 9.png" alt="Discord Delivery" width="100%"/>
 
 </td>
 </tr>
@@ -61,17 +76,17 @@
 
 ## ✨ What It Does
 
-Give it **any company name or website URL** and it:
+Give it **any company name or website URL** and it runs a full 7-step intelligence pipeline:
 
-| Step | Action |
-|---|---|
-| 🌐 **Resolves** | Finds the official website via Serper.dev (filters aggregators like LinkedIn/Wikipedia) |
-| 🕷️ **Crawls** | Discovers & scores internal links, fetches top pages concurrently, strips boilerplate |
-| 🔎 **Enriches** | Secondary search pass for phone/address data not always on-site |
-| 🤖 **Analyzes** | OpenRouter LLM generates summary, products/services, pain points, industry label |
-| 🏆 **Ranks Competitors** | Second LLM call deduplicates and ranks competitor candidates |
-| 📄 **Exports PDF** | WeasyPrint renders a professionally styled, downloadable report |
-| 💬 **Delivers (optional)** | Sends PDF + applicant info to your Discord channel via Bot API |
+| Step | Service | Action |
+|---|---|---|
+| 🌐 **1. Resolve** | Serper.dev | Finds the official website URL — filters LinkedIn, Wikipedia, aggregators |
+| 🕷️ **2. Crawl** | httpx + BS4 | Scores internal links by keyword relevance, fetches concurrently, strips boilerplate |
+| 🔎 **3. Enrich** | Serper.dev | Secondary search pass for phone, address, contact hints not always on-site |
+| 🤖 **4. Analyze** | OpenRouter LLM | JSON-only prompt → company summary, products/services, pain points, industry label |
+| 🏆 **5. Rank Competitors** | OpenRouter LLM | Second LLM call deduplicates and ranks competitor candidates into a clean list |
+| 📄 **6. Export PDF** | WeasyPrint | Renders a professionally styled, downloadable report from HTML/CSS |
+| 💬 **7. Deliver** | Discord Bot API | (Optional) Sends PDF + applicant info to your configured Discord channel |
 
 All through a **dark, ChatGPT-style chat interface** — no database, no auth, zero persisted state.
 
@@ -82,28 +97,28 @@ All through a **dark, ChatGPT-style chat interface** — no database, no auth, z
 ```
 relu-research-assistant/
 │
-├── 📁 backend/                     FastAPI service
+├── 📁 backend/                       FastAPI service
 │   ├── main.py
 │   ├── config.py
 │   ├── models/
 │   │   └── schemas.py
 │   ├── services/
-│   │   ├── search.py               Serper.dev — website resolution, competitors, contacts
-│   │   ├── crawler.py              Site discovery + crawling + content extraction
-│   │   ├── ai_engine.py            OpenRouter — structured analysis + competitor ranking
-│   │   ├── pdf_generator.py        WeasyPrint HTML → PDF report builder
-│   │   └── discord_bot.py          Discord Bot API — report + applicant delivery
+│   │   ├── search.py                 Serper.dev — website resolution, competitors, contacts
+│   │   ├── crawler.py                Site discovery + crawling + content extraction
+│   │   ├── ai_engine.py              OpenRouter — structured analysis + competitor ranking
+│   │   ├── pdf_generator.py          WeasyPrint HTML → PDF report builder
+│   │   └── discord_bot.py            Discord Bot API — report + applicant delivery
 │   └── routers/
-│       ├── research.py             POST /api/research — full orchestration pipeline
-│       └── discord.py              POST /api/discord/test — validate bot token/channel
+│       ├── research.py               POST /api/research — full orchestration pipeline
+│       └── discord.py                POST /api/discord/test — validate bot/channel
 │
-├── 📁 frontend/                    Next.js 14 (App Router) + Tailwind
-│   ├── app/page.tsx                 Chat interface, examples, progress states
-│   ├── components/Sidebar.tsx       API keys + Discord config tabs
-│   ├── components/ResearchCard.tsx  Rendered research result + PDF download
-│   └── lib/api.ts                   Backend client
+├── 📁 frontend/                      Next.js 14 (App Router) + Tailwind
+│   ├── app/page.tsx                  Chat interface, examples, progress states
+│   ├── components/Sidebar.tsx        API keys + Discord config tabs
+│   ├── components/ResearchCard.tsx   Rendered result + PDF download button
+│   └── lib/api.ts                    Backend client
 │
-└── 📁 screenshots/                 Demo images used in this README
+└── 📁 screenshots/                   Demo images used in this README
 ```
 
 ---
@@ -114,44 +129,45 @@ relu-research-assistant/
 User Input (company name or URL)
         │
         ▼
-┌───────────────────┐
-│  1. RESOLVE       │  Serper.dev → find official website URL
-│  (if not URL)     │  Filter: Wikipedia, LinkedIn, aggregators blocked
-└────────┬──────────┘
+┌────────────────────┐
+│  1. RESOLVE        │  Serper.dev → find official website URL
+│  (if not a URL)    │  Block: Wikipedia, LinkedIn, aggregator domains
+└────────┬───────────┘
          │
          ▼
-┌───────────────────┐
-│  2. CRAWL         │  Fetch homepage → discover internal links
-│                   │  Score by keyword relevance (about/products/pricing…)
-│                   │  Top pages fetched concurrently → strip nav/footer/scripts
-└────────┬──────────┘
+┌────────────────────┐
+│  2. CRAWL          │  Fetch homepage → discover + score internal links
+│                    │  Keywords: about / products / services / pricing
+│                    │  Top 8 pages fetched concurrently → strip boilerplate
+└────────┬───────────┘
          │
          ▼
-┌───────────────────┐
-│  3. ENRICH        │  Secondary Serper pass → phone, address, contact hints
-└────────┬──────────┘
+┌────────────────────┐
+│  3. ENRICH         │  Secondary Serper pass → phone, address, contact hints
+└────────┬───────────┘
          │
          ▼
-┌───────────────────┐
-│  4. ANALYZE       │  All crawled text → OpenRouter (user-chosen model)
-│                   │  JSON-only prompt → summary, products, pain points, industry
-└────────┬──────────┘
+┌────────────────────┐
+│  4. ANALYZE        │  Crawled text → OpenRouter (user-chosen model)
+│                    │  JSON-only prompt → summary, products, pain points, industry
+└────────┬───────────┘
          │
          ▼
-┌───────────────────┐
-│  5. COMPETITORS   │  Serper finds candidates → second LLM call ranks them
-└────────┬──────────┘
+┌────────────────────┐
+│  5. COMPETITORS    │  Serper finds candidates
+│                    │  Second LLM call dedupes + ranks → name + website list
+└────────┬───────────┘
          │
          ▼
-┌───────────────────┐
-│  6. PDF           │  WeasyPrint renders HTML/CSS → base64 PDF returned
-└────────┬──────────┘
+┌────────────────────┐
+│  6. PDF            │  WeasyPrint renders HTML/CSS → base64 PDF returned
+└────────┬───────────┘
          │
          ▼
-┌───────────────────┐
-│  7. DISCORD       │  (Optional) PDF + applicant info → Discord Bot API
-│  (if configured)  │
-└───────────────────┘
+┌────────────────────┐
+│  7. DISCORD        │  (Optional) PDF + applicant info → Discord Bot API
+│  (if configured)   │
+└────────────────────┘
 ```
 
 ---
@@ -162,9 +178,8 @@ User Input (company name or URL)
 
 ```bash
 cd backend
-python -m venv venv
 
-# Activate
+python -m venv venv
 source venv/bin/activate          # macOS / Linux
 # venv\Scripts\activate           # Windows
 
@@ -182,9 +197,9 @@ uvicorn main:app --reload --port 8000
 > apt-get install libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf-2.0-0 libffi-dev libcairo2
 > ```
 >
-> 🐳 Using Docker? The included `Dockerfile` handles all of this automatically.
+> 🐳 **Using Docker?** The included `Dockerfile` handles all system dependencies automatically.
 >
-> ⚠️ **Note:** `requirements.txt` pins `pydyf==0.10.0` alongside `weasyprint==62.3`. Newer `pydyf` releases (0.11+) removed an internal method WeasyPrint 62.3 depends on, which breaks PDF generation with an `AttributeError`. Keep this pin unless you also upgrade WeasyPrint.
+> ⚠️ **pydyf version pin:** `requirements.txt` pins `pydyf==0.10.0` alongside `weasyprint==62.3`. Newer `pydyf` releases (0.11+) removed an internal method WeasyPrint 62.3 depends on — upgrading breaks PDF generation with an `AttributeError`. Keep this pin unless you also upgrade WeasyPrint.
 
 ### Frontend
 
@@ -206,37 +221,37 @@ Visit `http://localhost:3000` — the ChatGPT-style interface will be live.
 | Location | Variable | Required | Description |
 |---|---|---|---|
 | Frontend | `NEXT_PUBLIC_API_URL` | ✅ Yes | Base URL of FastAPI backend — no trailing slash |
-| Backend | *(none)* | — | All keys are entered in-app, not stored server-side |
+| Backend | *(none)* | — | All API keys are entered in-app, never stored server-side |
 
 ### In-App Configuration (Sidebar)
 
-Entered by the user per session, never persisted to disk or database:
+Entered by the user per session — never persisted to disk or database:
 
-| Setting | Description |
-|---|---|
-| 🤖 **OpenRouter API Key** | Your OpenRouter key |
-| 🧠 **Model Selection** | Any OpenRouter model string (default: `openai/gpt-4o-mini`) |
-| 🔎 **Serper.dev API Key** | Powers website resolution + competitor search |
-| 💬 **Discord Bot Token** | Optional — for auto-delivery |
-| 📢 **Discord Channel ID** | Optional — target channel for report delivery |
-| 👤 **Applicant Name + Email** | Optional — included in Discord submission |
+| Setting | Required | Description |
+|---------|----------|-------------|
+| 🤖 **OpenRouter API Key** | ✅ Yes | Your OpenRouter key |
+| 🧠 **Model Selection** | ✅ Yes | Any OpenRouter model string (default: `openai/gpt-4o-mini`) |
+| 🔎 **Serper.dev API Key** | ✅ Yes | Powers website resolution + competitor search |
+| 💬 **Discord Bot Token** | Optional | For auto-delivery to Discord |
+| 📢 **Discord Channel ID** | Optional | Target channel for report delivery |
+| 👤 **Applicant Name + Email** | Optional | Included in Discord submission |
 
 ---
 
 ## 🚢 Deployment
 
-**Live deployment:**
-- Frontend: [relu-frontend-gamma.vercel.app](https://relu-frontend-gamma.vercel.app) (Vercel)
-- Backend: Render (Docker)
+**Live Deployment:**
+- 🌐 Frontend: [relu-frontend-gamma.vercel.app](https://relu-frontend-gamma.vercel.app) — Vercel
+- ⚙️ Backend: Render — Docker container
 
 ### Frontend → Vercel
 
 ```bash
-# Set environment variable in Vercel dashboard:
+# Set in Vercel dashboard → Project → Environment Variables:
 NEXT_PUBLIC_API_URL=https://your-backend.onrender.com
 ```
 
-Set **Root Directory** to `frontend` when importing the project, since this is a monorepo.
+> ⚠️ Set **Root Directory** to `frontend` when importing — this is a monorepo.
 
 ### Backend → Render / Railway / Fly.io
 
@@ -248,19 +263,20 @@ docker run -p 8000:8000 relu-backend
 
 > ⚠️ **Avoid pure serverless functions** — crawling + multiple sequential AI calls can exceed short function timeouts. Use a persistent container service.
 >
-> ⚠️ **Free-tier cold starts:** Render's free tier spins down after ~15 minutes idle. The first request after inactivity may take 30–50s while the container wakes up.
+> ⚠️ **Free-tier cold starts:** Render's free tier spins down after ~15 min idle. First request after inactivity may take 30–50s while the container wakes up.
 
 ---
 
 ## 🎨 Design Choices
 
 | Decision | Rationale |
-|---|---|
-| **`httpx` + BeautifulSoup** over headless browser | Fast, dependency-light; sufficient for server-rendered marketing pages |
-| **WeasyPrint** (HTML/CSS → PDF) | Report layout stays easy to iterate; matches required visual spec closely |
-| **User-controlled model** | Any OpenRouter model string works; nothing hardcoded beyond a sensible default |
-| **No persistence** | Every request is fully stateless; API keys never touch a DB or disk — by design |
-| **Page cap: 8 pages / 6000 chars** | Keeps AI prompt size bounded and costs predictable |
+|----------|-----------|
+| **`httpx` + BeautifulSoup** over headless browser | Fast, dependency-light; sufficient for server-rendered marketing pages targeted by this use case |
+| **WeasyPrint** (HTML/CSS → PDF) | Report layout stays easy to iterate on; visual styling matches required spec closely |
+| **User-controlled model** | Any OpenRouter model string works; nothing hardcoded beyond a sensible default (`gpt-4o-mini`) |
+| **No persistence** | Every request fully stateless; API keys never touch a DB or disk — by design, per assignment requirements |
+| **Page cap: 8 pages / 6000 chars** | Keeps AI prompt size bounded and inference costs predictable |
+| **Two LLM calls** | Separation of concerns — first call for analysis, second call exclusively for competitor ranking/deduplication |
 
 ---
 
@@ -268,45 +284,57 @@ docker run -p 8000:8000 relu-backend
 
 | Method | Endpoint | Description |
 |---|---|---|
-| `POST` | `/api/research` | Full orchestration pipeline — crawl → analyze → PDF |
+| `POST` | `/api/research` | Full orchestration pipeline — resolve → crawl → analyze → PDF |
 | `POST` | `/api/discord/test` | Validate Discord bot token and channel ID |
-| `GET` | `/api/health` | Health check |
+| `GET` | `/health` | Health check |
+
+---
+
+## ⚠️ Known Limitation: Bot-Protected Sites
+
+This assistant crawls with a plain HTTP client (`httpx`), not a headless browser — a deliberate tradeoff for speed and low resource use (see [Design Choices](#-design-choices)).
+
+Sites with aggressive bot protection (Akamai / PerimeterX-style detection, JS-rendered content, CAPTCHA challenges) may return a bot-check page or empty content instead of the real homepage. **Amazon is a prime example.**
+
+When that happens, the crawler detects it found no usable content and returns a clean error — no silent failure, no fabricated data:
+
+```json
+{ "detail": "No readable content found at https://www.amazon.com." }
+```
+
+Companies with simpler, less-protected marketing sites (Meta, Telegram, Stripe, etc. — see screenshots above) work reliably.
+
+<img src="screenshots/Screenshot-18.png" alt="Bot-protected site error" width="800"/>
 
 ---
 
 ## 🧱 Tech Stack
 
 | Layer | Technology |
-|---|---|
+|-------|------------|
 | Backend Framework | [FastAPI](https://fastapi.tiangolo.com/) |
 | Frontend | [Next.js 14](https://nextjs.org/) + [Tailwind CSS](https://tailwindcss.com/) |
-| LLM Provider | [OpenRouter](https://openrouter.ai/) (any model) |
+| LLM Provider | [OpenRouter](https://openrouter.ai/) — any model |
 | Web Search | [Serper.dev](https://serper.dev/) |
 | Web Crawling | [httpx](https://www.python-httpx.org/) + [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/) |
 | PDF Generation | [WeasyPrint](https://weasyprint.org/) |
 | Discord Delivery | [Discord Bot API](https://discord.com/developers/docs/intro) |
 | Containerization | Docker |
-
----
-
-## ⚠️ Known Limitation: Bot-Protected Sites
-
-This assistant crawls with a plain HTTP client (`httpx`), not a headless browser — a deliberate tradeoff for speed and low resource use (see [Design Choices](#-design-choices)). Sites with aggressive bot protection (Akamai/PerimeterX-style detection, JS-rendered content, CAPTCHA challenges) — **Amazon being a prime example** — may return a bot-check page or empty content instead of the real homepage.
-
-When that happens, the crawler correctly detects it found no usable content and returns a clean error:
-```json
-{"detail": "No readable content found at https://www.amazon.com."}
-```
-rather than silently failing or fabricating data. Companies with simpler, less-protected marketing sites (Meta, Telegram, Stripe, etc. — see screenshots above) work reliably.
-
-<img src="screenshots/Screenshot-18.png" alt="Discord Delivery" width="800" />
+| Frontend Hosting | Vercel |
+| Backend Hosting | Render |
 
 ---
 
 <div align="center">
 
-Built with ❤️ for AI-powered research automation
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:5865F2,50:6C47FF,100:009688&height=120&section=footer"/>
 
-[⭐ Star this repo](https://github.com/AIstar007/Relu-company-research-assistant.) · [🐛 Report an Issue](https://github.com/AIstar007/Relu-company-research-assistant./issues)
+*Built with ❤️ for AI-powered research automation*
+
+**📄 License:** MIT · **👨‍💻 Author:** Alen Thomas · [**GitHub: AIstar007**](https://github.com/AIstar007)
+
+[![Star](https://img.shields.io/badge/⭐_Star-this_repo-black?style=for-the-badge&logo=github)](https://github.com/AIstar007/Relu-company-research-assistant.)
+[![Live App](https://img.shields.io/badge/🌐_Open-Live_App-009688?style=for-the-badge)](https://relu-frontend-gamma.vercel.app)
+[![Issues](https://img.shields.io/badge/🐛_Report-an_Issue-FF6B35?style=for-the-badge&logo=github)](https://github.com/AIstar007/Relu-company-research-assistant./issues)
 
 </div>
