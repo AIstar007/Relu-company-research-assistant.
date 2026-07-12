@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:009688,50:6C47FF,100:5865F2&height=220&section=header&text=Company%20Research%20Assistant&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI-Powered%20%C2%B7%20Web-Crawling%20%C2%B7%20PDF%20Reports%20%C2%B7%20Discord%20Delivery&descAlignY=58"/>
-
 # 🔍 Relu Company Research Assistant
 
 <p>
@@ -326,8 +324,6 @@ Companies with simpler, less-protected marketing sites (Meta, Telegram, Stripe, 
 ---
 
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:5865F2,50:6C47FF,100:009688&height=120&section=footer"/>
 
 *Built with ❤️ for AI-powered research automation*
 
